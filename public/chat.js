@@ -25,7 +25,10 @@ message.addEventListener('keypress',function(){
 //Listen for events
 socket.on('chat',function(data){
   feedback.innerHTML = "";
-  output.innerHTML += '<p><strong>' + data.handle + ' : </strong>' + data.message + '</p>';
+  message.value = "";
+  var str = '<p><span class="mdl-chip mdl-chip--contact"><span class="mdl-chip__contact mdl-color--teal mdl-color-text--white">' + data.handle.substring(0,2) + '</span><span class="mdl-chip__text">' + data.message +'</span></span></p>';
+  output.innerHTML += str;
+//output.innerHTML += '<p><strong>' + data.handle + ' : </strong>' + data.message + '</p>';
 });
 
 socket.on('typing',function(data){
