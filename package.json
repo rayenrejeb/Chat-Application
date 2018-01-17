@@ -1,12 +1,12 @@
 {
   "name": "websocket",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple web chat application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Rayen Rejeb",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
